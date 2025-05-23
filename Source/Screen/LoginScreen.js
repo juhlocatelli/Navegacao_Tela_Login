@@ -9,7 +9,7 @@ export default function LoginScreen({ navigation }) {
     if (email.trim() === '' || senha.trim() === '') {
       Alert.alert('Erro', 'Por favor, preencha todos os campos.');
     } else {
-      navigation.replace('Home', { userEmail: email }); // impede que o usuário volte à tela login
+      navigation.replace('Home', { userEmail: email });
     }
   };
 
